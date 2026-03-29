@@ -94,8 +94,11 @@ export function SiteHeader() {
                     className={`absolute inset-0 bg-black/50 transition-opacity duration-300 ${isDrawerOpen ? "opacity-100" : "opacity-0"}`}
                 />
                 <aside
-                    className={`absolute inset-y-0 left-0 flex w-[min(85vw,22rem)] flex-col border-r border-white/10 bg-[linear-gradient(180deg,rgba(18,12,12,0.98),rgba(27,14,14,0.98))] p-5 text-white shadow-[0_30px_80px_rgba(0,0,0,0.35)] transition-transform duration-300 ease-out ${isDrawerOpen ? "translate-x-0" : "-translate-x-full"}`}
+                    className={`absolute inset-y-0 left-0 isolate overflow-hidden flex w-[min(85vw,22rem)] flex-col border-r border-white/10 bg-background p-5 text-white shadow-[0_30px_80px_rgba(0,0,0,0.42)] transition-transform duration-300 ease-out dark:bg-[#120c0c] ${isDrawerOpen ? "translate-x-0" : "-translate-x-full"}`}
                 >
+                    <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(18,12,12,0.98),rgba(27,14,14,0.98))] dark:bg-[linear-gradient(180deg,rgba(18,12,12,0.985),rgba(27,14,14,0.985))]" />
+                    <div className="pointer-events-none absolute inset-x-0 top-0 h-28 bg-[radial-gradient(circle_at_top,rgba(231,76,60,0.22),transparent_72%)]" />
+                    <div className="relative z-10 flex h-full flex-col">
                     <div className="flex items-start justify-between gap-4">
                         <div className="flex items-center gap-3">
                             <div className="flex size-11 items-center justify-center rounded-2xl bg-primary text-primary-foreground shadow-[0_16px_42px_rgba(231,76,60,0.32)]">
@@ -138,6 +141,7 @@ export function SiteHeader() {
                                 {content.header.launchCta}
                             </Button>
                         </a>
+                    </div>
                     </div>
                 </aside>
             </div>
