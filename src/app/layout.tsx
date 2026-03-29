@@ -14,9 +14,19 @@ const displayFont = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "African Video Platform | Stories That Move | Des histoires qui avancent",
+  title: "Iziplay | Stories That Move | Des histoires qui avancent",
   description:
-    "A bilingual marketing site for African Video Platform / Une landing page bilingue pour African Video Platform, concue pour presenter la croissance createur, la decouverte, la moderation et la distribution mobile-first.",
+    "A bilingual marketing site for Iziplay / Une landing page bilingue pour Iziplay, concue pour presenter la croissance createur, la decouverte, la moderation et la distribution mobile-first.",
+  manifest: "/manifest.webmanifest",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: ["/favicon.ico"],
+  },
 };
 
 export default function RootLayout({
