@@ -80,6 +80,10 @@ body {
   min-height: 100%;
 }
 
+html {
+  scroll-padding-top: 6rem;
+}
+
 body {
   background:
     radial-gradient(circle at top, rgba(231, 76, 60, 0.08), transparent 24%),
@@ -130,4 +134,10 @@ a {
 
 .animate-float-card {
   animation: float-card 8s ease-in-out infinite;
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 15px;
+  }
 }
