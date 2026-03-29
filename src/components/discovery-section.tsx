@@ -18,13 +18,13 @@ export function DiscoverySection() {
                     description={content.discovery.description}
                 />
             </Reveal>
-            <div className="mt-7 grid gap-3 sm:mt-10 sm:gap-5 lg:grid-cols-3">
+            <div className="mt-7 grid items-stretch gap-3 sm:mt-10 sm:gap-5 lg:auto-rows-fr lg:grid-cols-3">
                 {content.discovery.columns.map((column, index) => {
                     const Icon = icons[index] ?? Compass;
 
                     return (
-                        <Reveal key={column.title} delay={index * 110}>
-                            <article className="rounded-[1.6rem] border border-border/70 bg-card/70 p-4 backdrop-blur sm:rounded-[2rem] sm:p-6">
+                        <Reveal key={column.title} delay={index * 110} className="h-full">
+                            <article className="flex h-full flex-col rounded-[1.6rem] border border-border/70 bg-card/70 p-4 backdrop-blur sm:rounded-[2rem] sm:p-6">
                                 <div className="flex items-center gap-3">
                                     <div className="flex size-10 items-center justify-center rounded-[1rem] bg-accent text-accent-foreground sm:size-11 sm:rounded-2xl">
                                         <Icon className="size-5" />

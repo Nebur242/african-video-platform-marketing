@@ -19,13 +19,13 @@ export function TrustSection() {
                         description={content.trust.description}
                     />
                 </Reveal>
-                <div className="mt-7 grid gap-3 sm:mt-10 sm:gap-5 lg:grid-cols-3">
+                <div className="mt-7 grid items-stretch gap-3 sm:mt-10 sm:gap-5 lg:auto-rows-fr lg:grid-cols-3">
                     {content.trust.points.map((point, index) => {
                         const Icon = icons[index] ?? ShieldCheck;
 
                         return (
-                            <Reveal key={point.title} delay={index * 100}>
-                                <article className="rounded-[1.6rem] border border-primary/16 bg-card/80 p-4 shadow-[0_24px_80px_rgba(231,76,60,0.08)] backdrop-blur sm:rounded-[2rem] sm:p-6">
+                            <Reveal key={point.title} delay={index * 100} className="h-full">
+                                <article className="flex h-full flex-col rounded-[1.6rem] border border-primary/16 bg-card/80 p-4 shadow-[0_24px_80px_rgba(231,76,60,0.08)] backdrop-blur sm:rounded-[2rem] sm:p-6">
                                     <div className="flex size-11 items-center justify-center rounded-[1.1rem] bg-primary text-primary-foreground sm:size-12 sm:rounded-2xl">
                                         <Icon className="size-5" />
                                     </div>
