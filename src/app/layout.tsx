@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="fr"
       suppressHydrationWarning
       className={`${bodyFont.variable} ${displayFont.variable} h-full scroll-smooth antialiased`}
     >
