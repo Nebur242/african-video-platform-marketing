@@ -54,17 +54,17 @@ export function HeroSection() {
                 </Reveal>
 
                 <Reveal delay={120} className="relative">
-                    <div className="relative overflow-hidden rounded-4xl border border-white/10 bg-[linear-gradient(160deg,rgba(16,16,16,0.88),rgba(36,16,14,0.96))] p-4 text-white shadow-[0_30px_120px_rgba(14,14,14,0.45)] sm:p-6 dark:border-white/15">
-                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(231,76,60,0.22),transparent_38%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.08),transparent_28%)]" />
+                    <div className="relative overflow-hidden rounded-4xl border border-border/70 bg-[linear-gradient(160deg,rgba(255,250,247,0.96),rgba(248,236,231,0.98))] p-4 text-foreground shadow-[0_30px_120px_rgba(125,79,55,0.16)] sm:p-6 dark:border-white/15 dark:bg-[linear-gradient(160deg,rgba(16,16,16,0.88),rgba(36,16,14,0.96))] dark:text-white dark:shadow-[0_30px_120px_rgba(14,14,14,0.45)]">
+                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(231,76,60,0.14),transparent_38%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.46),transparent_30%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(231,76,60,0.22),transparent_38%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.08),transparent_28%)]" />
                         <div className="relative space-y-4 sm:space-y-6">
-                            <div className="flex items-start justify-between gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm sm:items-center">
+                            <div className="flex items-start justify-between gap-4 rounded-2xl border border-border/70 bg-white/55 p-4 backdrop-blur-sm sm:items-center dark:border-white/10 dark:bg-white/5">
                                 <div className="min-w-0">
-                                    <p className="text-xs uppercase tracking-[0.18em] text-white/60 sm:text-sm sm:tracking-[0.24em]">
+                                    <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground sm:text-sm sm:tracking-[0.24em] dark:text-white/60">
                                         {content.hero.audienceLabel}
                                     </p>
                                     <p className="mt-2 font-display text-lg leading-tight sm:text-2xl">African Video Platform</p>
                                 </div>
-                                <div className="rounded-2xl bg-white/8 p-3">
+                                <div className="rounded-2xl bg-black/4 p-3 dark:bg-white/8">
                                     <Globe className="size-6 text-[#ffb083]" />
                                 </div>
                             </div>
@@ -76,14 +76,14 @@ export function HeroSection() {
                                     return (
                                         <div
                                             key={card.title}
-                                            className="group rounded-[1.6rem] border border-white/10 bg-white/6 p-4 transition-transform duration-300 hover:-translate-y-1 sm:p-5"
+                                            className="group rounded-[1.6rem] border border-border/70 bg-white/52 p-4 transition-transform duration-300 hover:-translate-y-1 sm:p-5 dark:border-white/10 dark:bg-white/6"
                                         >
                                             <div className="flex items-start justify-between gap-3 sm:gap-4">
                                                 <div className="min-w-0">
                                                     <p className="font-display text-lg sm:text-xl">{card.title}</p>
-                                                    <p className="mt-2 text-sm leading-6 text-white/72 sm:leading-7">{card.detail}</p>
+                                                    <p className="mt-2 text-sm leading-6 text-muted-foreground sm:leading-7 dark:text-white/72">{card.detail}</p>
                                                 </div>
-                                                <div className="rounded-2xl bg-white/8 p-3 text-[#ffcf9e]">
+                                                <div className="rounded-2xl bg-black/4 p-3 text-[#d96a3c] dark:bg-white/8 dark:text-[#ffcf9e]">
                                                     <Icon className="size-5" />
                                                 </div>
                                             </div>
@@ -92,11 +92,11 @@ export function HeroSection() {
                                 })}
                             </div>
                             <div className="grid gap-4 sm:grid-cols-[1.15fr_0.85fr]">
-                                <div className="rounded-[1.6rem] bg-white px-4 py-5 text-slate-950 sm:px-5 sm:py-6">
+                                <div className="rounded-[1.6rem] border border-border/60 bg-white/88 px-4 py-5 text-slate-950 sm:px-5 sm:py-6 dark:border-white/10 dark:bg-white dark:text-slate-950">
                                     <p className="text-xs uppercase tracking-[0.18em] text-slate-500 sm:text-sm sm:tracking-[0.2em]">{content.hero.creatorLoopLabel}</p>
                                     <p className="mt-3 font-display text-2xl sm:text-3xl">{content.hero.creatorLoopValue}</p>
                                 </div>
-                                <div className="rounded-[1.6rem] border border-white/10 bg-primary/80 p-4 text-white sm:p-5">
+                                <div className="rounded-[1.6rem] border border-primary/18 bg-primary/92 p-4 text-white shadow-[0_16px_40px_rgba(231,76,60,0.18)] sm:p-5 dark:border-white/10 dark:bg-primary/80 dark:shadow-none">
                                     <p className="text-xs uppercase tracking-[0.18em] text-white/75 sm:text-sm sm:tracking-[0.2em]">{content.hero.shortsLabel}</p>
                                     <p className="mt-3 font-display text-2xl sm:text-3xl">{content.hero.shortsValue}</p>
                                 </div>
