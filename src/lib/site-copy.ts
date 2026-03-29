@@ -5,6 +5,21 @@ export type SiteContent = {
     title: string;
     description: string;
   };
+  launchModal: {
+    badge: string;
+    title: string;
+    description: string;
+    targetLabel: string;
+    closeLabel: string;
+    closedCta: string;
+    completeLabel: string;
+    units: {
+      days: string;
+      hours: string;
+      minutes: string;
+      seconds: string;
+    };
+  };
   nav: {
     product: string;
     creators: string;
@@ -85,6 +100,22 @@ export const siteCopy: Record<Language, SiteContent> = {
       title: "African Video Platform | Stories That Move",
       description:
         "A video platform built for African creators, communities, and cultural momentum. Publish, grow, monetize, and build direct audience relationships.",
+    },
+    launchModal: {
+      badge: "Coming soon",
+      title: "African Video Platform launches soon.",
+      description:
+        "We are counting down to the public launch. Stay close while we finish the last mile for creators, viewers, and communities.",
+      targetLabel: "Launch target",
+      closeLabel: "Close launch countdown modal",
+      closedCta: "Close",
+      completeLabel: "We are live.",
+      units: {
+        days: "Days",
+        hours: "Hours",
+        minutes: "Minutes",
+        seconds: "Seconds",
+      },
     },
     nav: {
       product: "Platform",
@@ -302,6 +333,22 @@ export const siteCopy: Record<Language, SiteContent> = {
       title: "African Video Platform | Des histoires qui avancent",
       description:
         "Une plateforme video pensee pour les createurs africains, les communautes et la croissance culturelle. Publier, developper son audience, monetiser et construire une relation directe avec son public.",
+    },
+    launchModal: {
+      badge: "Bientot disponible",
+      title: "African Video Platform arrive bientot.",
+      description:
+        "Le lancement public approche. Restez proches pendant que nous finalisons la derniere ligne droite pour les createurs, les spectateurs et les communautes.",
+      targetLabel: "Date cible",
+      closeLabel: "Fermer la fenetre du compte a rebours de lancement",
+      closedCta: "Fermer",
+      completeLabel: "Nous sommes en ligne.",
+      units: {
+        days: "Jours",
+        hours: "Heures",
+        minutes: "Minutes",
+        seconds: "Secondes",
+      },
     },
     nav: {
       product: "Plateforme",
