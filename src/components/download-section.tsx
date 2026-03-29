@@ -48,7 +48,7 @@ export function DownloadSection() {
                             ))}
                             <div>
                                 <Button variant="secondary" size="lg" className="min-h-11 w-full border-white/20 bg-white/10 px-4 text-sm text-white hover:bg-white/14 hover:text-white sm:min-h-12 sm:text-base">
-                                    Placeholder links are live and ready to swap
+                                    {content.download.readyCta}
                                 </Button>
                             </div>
                         </div>

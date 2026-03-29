@@ -45,7 +45,7 @@ export function SiteHeader() {
                         <div className="flex min-w-0 items-center gap-3">
                             <button
                                 type="button"
-                                aria-label="Open navigation menu"
+                                aria-label={content.header.openMenuLabel}
                                 aria-expanded={isDrawerOpen}
                                 onClick={() => setIsDrawerOpen(true)}
                                 className="inline-flex size-11 items-center justify-center rounded-full border border-border bg-card/80 text-foreground backdrop-blur transition-colors hover:border-primary/40 xl:hidden"
@@ -122,7 +122,7 @@ export function SiteHeader() {
                             </div>
                             <button
                                 type="button"
-                                aria-label="Close navigation drawer"
+                                aria-label={content.header.closeDrawerLabel}
                                 onClick={() => setIsDrawerOpen(false)}
                                 className="inline-flex size-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/80 transition-colors hover:bg-white/10"
                             >

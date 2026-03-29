@@ -14,9 +14,9 @@ const displayFont = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "African Video Platform | Stories That Move",
+  title: "African Video Platform | Stories That Move | Des histoires qui avancent",
   description:
-    "A bilingual marketing site for African Video Platform, designed to showcase creator growth, discovery, moderation, and mobile-first distribution.",
+    "A bilingual marketing site for African Video Platform / Une landing page bilingue pour African Video Platform, concue pour presenter la croissance createur, la decouverte, la moderation et la distribution mobile-first.",
 };
 
 export default function RootLayout({

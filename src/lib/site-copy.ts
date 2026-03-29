@@ -17,6 +17,14 @@ export type SiteContent = {
     languageLabel: string;
     themeLabel: string;
     launchCta: string;
+    openMenuLabel: string;
+    closeMenuLabel: string;
+    closeDrawerLabel: string;
+    themeOptions: {
+      light: string;
+      dark: string;
+      system: string;
+    };
   };
   hero: {
     eyebrow: string;
@@ -27,6 +35,10 @@ export type SiteContent = {
     audienceLabel: string;
     stats: Array<{ value: string; label: string }>;
     liveCards: Array<{ title: string; detail: string }>;
+    creatorLoopLabel: string;
+    creatorLoopValue: string;
+    shortsLabel: string;
+    shortsValue: string;
   };
   value: {
     title: string;
@@ -55,6 +67,7 @@ export type SiteContent = {
     description: string;
     stores: Array<{ name: string; note: string; href: string }>;
     footnote: string;
+    readyCta: string;
   };
   faq: {
     title: string;
@@ -85,6 +98,14 @@ export const siteCopy: Record<Language, SiteContent> = {
       languageLabel: "Language",
       themeLabel: "Theme",
       launchCta: "Launch preview",
+      openMenuLabel: "Open navigation menu",
+      closeMenuLabel: "Close navigation menu",
+      closeDrawerLabel: "Close navigation drawer",
+      themeOptions: {
+        light: "Light",
+        dark: "Dark",
+        system: "System",
+      },
     },
     hero: {
       eyebrow: "Built for African stories, creators, and communities",
@@ -100,10 +121,23 @@ export const siteCopy: Record<Language, SiteContent> = {
         { value: "Monetization-ready", label: "Creator system" },
       ],
       liveCards: [
-        { title: "Creator earnings", detail: "Revenue pathways designed for growth" },
-        { title: "Curated discovery", detail: "Trending videos, playlists, and categories" },
-        { title: "Trust layer", detail: "Moderation tools that protect the experience" },
+        {
+          title: "Creator earnings",
+          detail: "Revenue pathways designed for growth",
+        },
+        {
+          title: "Curated discovery",
+          detail: "Trending videos, playlists, and categories",
+        },
+        {
+          title: "Trust layer",
+          detail: "Moderation tools that protect the experience",
+        },
       ],
+      creatorLoopLabel: "Creator loop",
+      creatorLoopValue: "Publish. Reach. Earn.",
+      shortsLabel: "Shorts",
+      shortsValue: "Always-on discovery",
     },
     value: {
       title: "One platform, multiple growth loops.",
@@ -112,15 +146,18 @@ export const siteCopy: Record<Language, SiteContent> = {
       cards: [
         {
           title: "Mobile-first publishing",
-          description: "Upload and distribute content in formats that match how audiences already consume and share video.",
+          description:
+            "Upload and distribute content in formats that match how audiences already consume and share video.",
         },
         {
           title: "Audience growth built in",
-          description: "Categories, playlists, trending rails, and short video surfaces help strong content travel farther.",
+          description:
+            "Categories, playlists, trending rails, and short video surfaces help strong content travel farther.",
         },
         {
           title: "Operations with visibility",
-          description: "Moderation, support, and platform controls help the product stay reliable as the catalog and user base grow.",
+          description:
+            "Moderation, support, and platform controls help the product stay reliable as the catalog and user base grow.",
         },
       ],
     },
@@ -131,15 +168,18 @@ export const siteCopy: Record<Language, SiteContent> = {
       pillars: [
         {
           title: "Publish with intention",
-          description: "Long-form video, playlists, and short-form clips create multiple entry points into the same catalog.",
+          description:
+            "Long-form video, playlists, and short-form clips create multiple entry points into the same catalog.",
         },
         {
           title: "Build repeat audiences",
-          description: "Followers, saved content, playlists, and recommendations turn single views into recurring engagement.",
+          description:
+            "Followers, saved content, playlists, and recommendations turn single views into recurring engagement.",
         },
         {
           title: "Turn reach into revenue",
-          description: "The platform supports creator revenue features and payout-oriented workflows that can scale with usage.",
+          description:
+            "The platform supports creator revenue features and payout-oriented workflows that can scale with usage.",
         },
       ],
       revenueTitle: "Monetization signals the platform is designed to support",
@@ -157,15 +197,30 @@ export const siteCopy: Record<Language, SiteContent> = {
       columns: [
         {
           title: "Viewers discover",
-          items: ["Trending videos", "Short-form highlights", "Top creators", "Category-led browsing"],
+          items: [
+            "Trending videos",
+            "Short-form highlights",
+            "Top creators",
+            "Category-led browsing",
+          ],
         },
         {
           title: "Communities keep returning",
-          items: ["Saved content", "Bookmarks", "Follower loops", "Personalized recommendations"],
+          items: [
+            "Saved content",
+            "Bookmarks",
+            "Follower loops",
+            "Personalized recommendations",
+          ],
         },
         {
           title: "Teams keep control",
-          items: ["Moderation tooling", "Support workflows", "Media management", "Platform configuration"],
+          items: [
+            "Moderation tooling",
+            "Support workflows",
+            "Media management",
+            "Platform configuration",
+          ],
         },
       ],
     },
@@ -176,15 +231,18 @@ export const siteCopy: Record<Language, SiteContent> = {
       points: [
         {
           title: "Moderation-aware foundation",
-          description: "Review flows and admin controls help teams respond quickly when content or behavior needs attention.",
+          description:
+            "Review flows and admin controls help teams respond quickly when content or behavior needs attention.",
         },
         {
           title: "Support that closes the loop",
-          description: "Integrated support and operational tools reduce friction for users and internal staff.",
+          description:
+            "Integrated support and operational tools reduce friction for users and internal staff.",
         },
         {
           title: "Stable media delivery",
-          description: "Production media infrastructure is designed for fast playback and consistent distribution.",
+          description:
+            "Production media infrastructure is designed for fast playback and consistent distribution.",
         },
       ],
     },
@@ -204,31 +262,38 @@ export const siteCopy: Record<Language, SiteContent> = {
           href: "https://example.com/google-play-placeholder",
         },
       ],
-      footnote: "Production deploy requested. Public download links can be swapped in without redesigning the page.",
+      footnote:
+        "Production deploy requested. Public download links can be swapped in without redesigning the page.",
+      readyCta: "Placeholder links are live and ready to swap",
     },
     faq: {
       title: "Questions teams usually ask before launch.",
       items: [
         {
           question: "Who is this platform designed for?",
-          answer: "It is built for African creators, viewers, and operators who need a mobile-first video ecosystem with publishing, discovery, and operational control in one product.",
+          answer:
+            "It is built for African creators, viewers, and operators who need a mobile-first video ecosystem with publishing, discovery, and operational control in one product.",
         },
         {
           question: "Does the platform support creator monetization?",
-          answer: "Yes. The product direction clearly supports creator revenue workflows, payout systems, and monetization-oriented experiences that can expand over time.",
+          answer:
+            "Yes. The product direction clearly supports creator revenue workflows, payout systems, and monetization-oriented experiences that can expand over time.",
         },
         {
           question: "Why highlight moderation on a marketing page?",
-          answer: "Because growth without trust does not compound. Moderation and support readiness are part of the platform's credibility story.",
+          answer:
+            "Because growth without trust does not compound. Moderation and support readiness are part of the platform's credibility story.",
         },
         {
           question: "Can the download buttons be updated later?",
-          answer: "Yes. The current links are explicit placeholders so the final store URLs can be swapped in without changing the structure or copy.",
+          answer:
+            "Yes. The current links are explicit placeholders so the final store URLs can be swapped in without changing the structure or copy.",
         },
       ],
     },
     footer: {
-      tagline: "African Video Platform aligns creator ambition, viewer energy, and operational control in one mobile-first product.",
+      tagline:
+        "African Video Platform aligns creator ambition, viewer energy, and operational control in one mobile-first product.",
       rights: "All rights reserved.",
     },
   },
@@ -250,6 +315,14 @@ export const siteCopy: Record<Language, SiteContent> = {
       languageLabel: "Langue",
       themeLabel: "Theme",
       launchCta: "Voir l'aperçu",
+      openMenuLabel: "Ouvrir le menu de navigation",
+      closeMenuLabel: "Fermer le menu de navigation",
+      closeDrawerLabel: "Fermer le panneau de navigation",
+      themeOptions: {
+        light: "Clair",
+        dark: "Sombre",
+        system: "Systeme",
+      },
     },
     hero: {
       eyebrow: "Concue pour les histoires, createurs et communautes africains",
@@ -265,10 +338,23 @@ export const siteCopy: Record<Language, SiteContent> = {
         { value: "Pret pour la monetisation", label: "Systeme createur" },
       ],
       liveCards: [
-        { title: "Revenus createurs", detail: "Des parcours de revenus concus pour la croissance" },
-        { title: "Decouverte editee", detail: "Tendances, playlists et categories" },
-        { title: "Couche de confiance", detail: "Des outils de moderation pour proteger l'experience" },
+        {
+          title: "Revenus createurs",
+          detail: "Des parcours de revenus concus pour la croissance",
+        },
+        {
+          title: "Decouverte editee",
+          detail: "Tendances, playlists et categories",
+        },
+        {
+          title: "Couche de confiance",
+          detail: "Des outils de moderation pour proteger l'experience",
+        },
       ],
+      creatorLoopLabel: "Boucle createur",
+      creatorLoopValue: "Publier. Toucher. Monetiser.",
+      shortsLabel: "Formats courts",
+      shortsValue: "Une decouverte toujours active",
     },
     value: {
       title: "Une plateforme, plusieurs boucles de croissance.",
@@ -277,15 +363,18 @@ export const siteCopy: Record<Language, SiteContent> = {
       cards: [
         {
           title: "Publication mobile-first",
-          description: "Telecharger et distribuer les contenus dans des formats qui correspondent aux usages reels des audiences.",
+          description:
+            "Telecharger et distribuer les contenus dans des formats qui correspondent aux usages reels des audiences.",
         },
         {
           title: "Croissance d'audience integree",
-          description: "Categories, playlists, contenus tendance et formats courts aident les meilleurs contenus a circuler davantage.",
+          description:
+            "Categories, playlists, contenus tendance et formats courts aident les meilleurs contenus a circuler davantage.",
         },
         {
           title: "Pilotage avec visibilite",
-          description: "Moderation, support et parametres plateforme gardent l'experience fiable quand le catalogue et la base utilisateur grandissent.",
+          description:
+            "Moderation, support et parametres plateforme gardent l'experience fiable quand le catalogue et la base utilisateur grandissent.",
         },
       ],
     },
@@ -296,15 +385,18 @@ export const siteCopy: Record<Language, SiteContent> = {
       pillars: [
         {
           title: "Publier avec intention",
-          description: "Video longue, playlists et clips courts creent plusieurs points d'entree dans un meme catalogue.",
+          description:
+            "Video longue, playlists et clips courts creent plusieurs points d'entree dans un meme catalogue.",
         },
         {
           title: "Construire une audience recurrente",
-          description: "Followers, contenus sauvegardes, playlists et recommandations transforment une vue isolee en engagement regulier.",
+          description:
+            "Followers, contenus sauvegardes, playlists et recommandations transforment une vue isolee en engagement regulier.",
         },
         {
           title: "Transformer la portee en revenus",
-          description: "La plateforme supporte des fonctionnalites de revenus createurs et des workflows de paiement capables d'evoluer avec l'usage.",
+          description:
+            "La plateforme supporte des fonctionnalites de revenus createurs et des workflows de paiement capables d'evoluer avec l'usage.",
         },
       ],
       revenueTitle: "Signaux de monetisation que la plateforme sait soutenir",
@@ -322,39 +414,59 @@ export const siteCopy: Record<Language, SiteContent> = {
       columns: [
         {
           title: "Les spectateurs decouvrent",
-          items: ["Videos tendance", "Highlights formats courts", "Top createurs", "Navigation par categories"],
+          items: [
+            "Videos tendance",
+            "Highlights formats courts",
+            "Top createurs",
+            "Navigation par categories",
+          ],
         },
         {
           title: "Les communautes reviennent",
-          items: ["Contenus sauvegardes", "Bookmarks", "Boucles followers", "Recommandations personnalisees"],
+          items: [
+            "Contenus sauvegardes",
+            "Bookmarks",
+            "Boucles followers",
+            "Recommandations personnalisees",
+          ],
         },
         {
           title: "Les equipes gardent le controle",
-          items: ["Outils de moderation", "Flux support", "Gestion media", "Configuration plateforme"],
+          items: [
+            "Outils de moderation",
+            "Flux support",
+            "Gestion media",
+            "Configuration plateforme",
+          ],
         },
       ],
     },
     trust: {
-      title: "La confiance, la securite et la clarte operationnelle font partie du produit.",
+      title:
+        "La confiance, la securite et la clarte operationnelle font partie du produit.",
       description:
         "La croissance ne dure que si la surface inspire confiance. La plateforme est pensee avec moderation, support et visibilite interne des le depart.",
       points: [
         {
           title: "Fondation sensible a la moderation",
-          description: "Les flux de revue et les controles admin aident les equipes a reagir rapidement quand un contenu ou un comportement demande une action.",
+          description:
+            "Les flux de revue et les controles admin aident les equipes a reagir rapidement quand un contenu ou un comportement demande une action.",
         },
         {
           title: "Un support qui ferme la boucle",
-          description: "Les outils integres de support et d'exploitation reduisent les frictions pour les utilisateurs comme pour les equipes internes.",
+          description:
+            "Les outils integres de support et d'exploitation reduisent les frictions pour les utilisateurs comme pour les equipes internes.",
         },
         {
           title: "Une diffusion media stable",
-          description: "L'infrastructure media de production vise une lecture rapide et une distribution coherente.",
+          description:
+            "L'infrastructure media de production vise une lecture rapide et une distribution coherente.",
         },
       ],
     },
     download: {
-      title: "Les liens de telechargement pourront etre publies des que les stores seront prets.",
+      title:
+        "Les liens de telechargement pourront etre publies des que les stores seront prets.",
       description:
         "La landing page est prete pour la production. Les boutons de store sont volontairement identifies comme placeholders afin d'etre remplaces plus tard par les liens finaux App Store et Google Play.",
       stores: [
@@ -369,31 +481,40 @@ export const siteCopy: Record<Language, SiteContent> = {
           href: "https://example.com/google-play-placeholder",
         },
       ],
-      footnote: "Deploiement production demande. Les vrais liens de telechargement pourront etre injectes sans refaire le design.",
+      footnote:
+        "Deploiement production demande. Les vrais liens de telechargement pourront etre injectes sans refaire le design.",
+      readyCta: "Les liens placeholders sont prets a etre remplaces",
     },
     faq: {
       title: "Les questions posees avant un lancement.",
       items: [
         {
           question: "A qui s'adresse la plateforme ?",
-          answer: "Elle est concue pour les createurs africains, les spectateurs et les equipes qui ont besoin d'un ecosysteme video mobile-first combinant publication, decouverte et controle operationnel.",
+          answer:
+            "Elle est concue pour les createurs africains, les spectateurs et les equipes qui ont besoin d'un ecosysteme video mobile-first combinant publication, decouverte et controle operationnel.",
         },
         {
           question: "La plateforme supporte-t-elle la monetisation createur ?",
-          answer: "Oui. La direction produit supporte clairement les workflows de revenus createurs, les paiements et des experiences orientees monetisation qui peuvent evoluer dans le temps.",
+          answer:
+            "Oui. La direction produit supporte clairement les workflows de revenus createurs, les paiements et des experiences orientees monetisation qui peuvent evoluer dans le temps.",
         },
         {
-          question: "Pourquoi mettre la moderation en avant sur une page marketing ?",
-          answer: "Parce que la croissance sans confiance ne dure pas. La moderation et la preparation du support font partie de la credibilite du produit.",
+          question:
+            "Pourquoi mettre la moderation en avant sur une page marketing ?",
+          answer:
+            "Parce que la croissance sans confiance ne dure pas. La moderation et la preparation du support font partie de la credibilite du produit.",
         },
         {
-          question: "Les boutons de telechargement pourront-ils etre mis a jour plus tard ?",
-          answer: "Oui. Les liens actuels sont des placeholders explicites afin de pouvoir remplacer les URLs finales sans changer la structure ni le contenu.",
+          question:
+            "Les boutons de telechargement pourront-ils etre mis a jour plus tard ?",
+          answer:
+            "Oui. Les liens actuels sont des placeholders explicites afin de pouvoir remplacer les URLs finales sans changer la structure ni le contenu.",
         },
       ],
     },
     footer: {
-      tagline: "African Video Platform relie l'ambition createur, l'energie des audiences et le controle operationnel dans un produit mobile-first.",
+      tagline:
+        "African Video Platform relie l'ambition createur, l'energie des audiences et le controle operationnel dans un produit mobile-first.",
       rights: "Tous droits reserves.",
     },
   },

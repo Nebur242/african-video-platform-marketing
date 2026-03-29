@@ -93,12 +93,12 @@ export function HeroSection() {
                             </div>
                             <div className="grid gap-4 sm:grid-cols-[1.15fr_0.85fr]">
                                 <div className="rounded-[1.6rem] bg-white px-4 py-5 text-slate-950 sm:px-5 sm:py-6">
-                                    <p className="text-xs uppercase tracking-[0.18em] text-slate-500 sm:text-sm sm:tracking-[0.2em]">Creator loop</p>
-                                    <p className="mt-3 font-display text-2xl sm:text-3xl">Publish. Reach. Earn.</p>
+                                    <p className="text-xs uppercase tracking-[0.18em] text-slate-500 sm:text-sm sm:tracking-[0.2em]">{content.hero.creatorLoopLabel}</p>
+                                    <p className="mt-3 font-display text-2xl sm:text-3xl">{content.hero.creatorLoopValue}</p>
                                 </div>
                                 <div className="rounded-[1.6rem] border border-white/10 bg-primary/80 p-4 text-white sm:p-5">
-                                    <p className="text-xs uppercase tracking-[0.18em] text-white/75 sm:text-sm sm:tracking-[0.2em]">Shorts</p>
-                                    <p className="mt-3 font-display text-2xl sm:text-3xl">Always-on discovery</p>
+                                    <p className="text-xs uppercase tracking-[0.18em] text-white/75 sm:text-sm sm:tracking-[0.2em]">{content.hero.shortsLabel}</p>
+                                    <p className="mt-3 font-display text-2xl sm:text-3xl">{content.hero.shortsValue}</p>
                                 </div>
                             </div>
                         </div>
