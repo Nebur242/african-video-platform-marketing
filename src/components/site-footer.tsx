@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useLanguage } from "@/hooks/language-context";
 
 export function SiteFooter() {
@@ -21,6 +22,14 @@ export function SiteFooter() {
                     <p className="max-w-2xl text-sm leading-7 text-muted-foreground">
                         {content.footer.tagline}
                     </p>
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
+                        <Link href="/privacy-policy" className="transition-colors hover:text-foreground">
+                            Privacy Policy / Politique de confidentialite
+                        </Link>
+                        <a href="mailto:hello@nebur242.com" className="transition-colors hover:text-foreground">
+                            hello@nebur242.com
+                        </a>
+                    </div>
                 </div>
                 <div className="text-sm text-muted-foreground lg:text-right">
                     <p>© 2026 Iziplay.</p>
