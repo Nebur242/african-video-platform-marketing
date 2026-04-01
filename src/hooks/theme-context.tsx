@@ -21,45 +21,27 @@ type ThemeContextValue = {
 const STORAGE_KEY = "avp-marketing-theme";
 const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 
-function getInitialTheme(): Theme {
-    if (typeof window === "undefined") {
-        return "system";
-    }
-
-    const storedTheme = window.localStorage.getItem(STORAGE_KEY) as Theme | null;
-    return storedTheme ?? "system";
-}
-
-function getResolvedTheme(theme: Theme) {
-    if (theme !== "system") {
-        return theme;
-    }
-
-    if (typeof window !== "undefined") {
-        return window.matchMedia("(prefers-color-scheme: dark)").matches
-            ? "dark"
-            : "light";
-    }
-
-    return "light";
+function resolveTheme(theme: Theme, prefersDark: boolean) {
+    return theme === "system" ? (prefersDark ? "dark" : "light") : theme;
 }
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-    const [theme, setTheme] = useState<Theme>(getInitialTheme);
-    const [resolvedTheme, setResolvedTheme] = useState<"light" | "dark">(() =>
-        getResolvedTheme(getInitialTheme()),
-    );
+    const [theme, setTheme] = useState<Theme>("system");
+    const [resolvedTheme, setResolvedTheme] = useState<"light" | "dark">("light");
+
+    useEffect(() => {
+        const storedTheme = window.localStorage.getItem(STORAGE_KEY) as Theme | null;
+
+        if (storedTheme) {
+            setTheme(storedTheme);
+        }
+    }, []);
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
         const applyTheme = (nextTheme: Theme) => {
-            const nextResolvedTheme =
-                nextTheme === "system"
-                    ? mediaQuery.matches
-                        ? "dark"
-                        : "light"
-                    : nextTheme;
+            const nextResolvedTheme = resolveTheme(nextTheme, mediaQuery.matches);
 
             document.documentElement.classList.toggle(
                 "dark",

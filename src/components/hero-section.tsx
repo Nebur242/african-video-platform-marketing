@@ -63,10 +63,10 @@ export function HeroSection() {
                                     <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground sm:text-sm sm:tracking-[0.24em] dark:text-white/60">
                                         {content.hero.audienceLabel}
                                     </p>
-                                    <p className="mt-2 font-display text-lg leading-tight sm:text-2xl">Iziplay</p>
+                                    <p className="mt-2 font-display text-lg leading-tight sm:text-2xl">Senflix</p>
                                 </div>
                                 <div className="flex size-14 items-center justify-center overflow-hidden rounded-2xl bg-black/4 p-1 dark:bg-white/8">
-                                    <Image src="/icon-192.png" alt="Iziplay icon" width={48} height={48} className="size-12 rounded-xl object-cover" />
+                                    <Image src="/icon-192.png" alt="Senflix icon" width={48} height={48} className="size-12 rounded-xl object-cover" />
                                 </div>
                             </div>
                             <div className="grid gap-4">

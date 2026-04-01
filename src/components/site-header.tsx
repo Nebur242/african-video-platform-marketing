@@ -56,14 +56,14 @@ export function SiteHeader() {
 
                             <a href="#top" className="min-w-0 flex items-center gap-3">
                                 <div className="flex size-11 items-center justify-center overflow-hidden rounded-2xl bg-primary/10 shadow-[0_16px_42px_rgba(231,76,60,0.18)] ring-1 ring-primary/20">
-                                    <Image src="/icon-192.png" alt="Iziplay icon" width={44} height={44} className="size-11 object-cover" />
+                                    <Image src="/icon-192.png" alt="Senflix icon" width={44} height={44} className="size-11 object-cover" />
                                 </div>
                                 <div className="min-w-0">
                                     <p className="font-display text-sm uppercase tracking-[0.22em] text-primary sm:tracking-[0.32em]">
-                                        Iziplay
+                                        Senflix
                                     </p>
                                     <p className="truncate text-sm text-muted-foreground sm:text-base">
-                                        Iziplay
+                                        Senflix
                                     </p>
                                 </div>
                             </a>
@@ -112,13 +112,13 @@ export function SiteHeader() {
                         <div className="flex items-start justify-between gap-4">
                             <div className="flex items-center gap-3">
                                 <div className="flex size-11 items-center justify-center overflow-hidden rounded-2xl bg-primary/10 shadow-[0_16px_42px_rgba(231,76,60,0.18)] ring-1 ring-primary/20">
-                                    <Image src="/icon-192.png" alt="Iziplay icon" width={44} height={44} className="size-11 object-cover" />
+                                    <Image src="/icon-192.png" alt="Senflix icon" width={44} height={44} className="size-11 object-cover" />
                                 </div>
                                 <div>
                                     <p className="font-display text-sm uppercase tracking-[0.22em] text-primary">
-                                        Iziplay
+                                        Senflix
                                     </p>
-                                    <p className="text-sm text-white/70">Iziplay</p>
+                                    <p className="text-sm text-white/70">Senflix</p>
                                 </div>
                             </div>
                             <button

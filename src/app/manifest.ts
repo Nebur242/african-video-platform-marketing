@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Iziplay",
-    short_name: "Iziplay",
+    name: "Senflix",
+    short_name: "Senflix",
     description:
-      "A bilingual marketing site for Iziplay focused on creator growth, discovery, moderation, and mobile-first distribution.",
+      "A bilingual marketing site for Senflix focused on creator growth, discovery, moderation, and mobile-first distribution.",
     start_url: "/",
     display: "standalone",
     background_color: "#fcf8f6",

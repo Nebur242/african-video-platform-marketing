@@ -53,9 +53,9 @@ const sections = [
 ] as const;
 
 export const metadata: Metadata = {
-    title: "Iziplay Privacy Policy",
+    title: "Senflix Privacy Policy",
     description:
-    "Privacy Policy for the Iziplay app, including data collection, permissions, payments, support, and user rights.",
+    "Privacy Policy for the Senflix app, including data collection, permissions, payments, support, and user rights.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -66,13 +66,13 @@ export default function PrivacyPolicyPage() {
                 <div className="flex flex-wrap items-center justify-between gap-4">
                     <div>
                         <p className="font-display text-sm uppercase tracking-[0.32em] text-primary">
-                            Iziplay
+                            Senflix
                         </p>
                         <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
                             Privacy Policy
                         </h1>
                         <p className="mt-4 max-w-2xl text-sm leading-7 text-muted-foreground sm:text-base">
-                            Effective date: March 30, 2026. This policy explains how the Iziplay
+                            Effective date: March 30, 2026. This policy explains how the Senflix
                             app collects, uses, shares, and protects personal
                             information across account, content, payment, support, and operational flows.
                         </p>

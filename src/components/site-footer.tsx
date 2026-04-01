@@ -13,10 +13,10 @@ export function SiteFooter() {
                 <div className="space-y-3">
                     <div className="flex items-center gap-3">
                         <div className="flex size-10 items-center justify-center overflow-hidden rounded-2xl bg-primary/10 ring-1 ring-primary/20">
-                            <Image src="/icon-192.png" alt="Iziplay icon" width={40} height={40} className="size-10 object-cover" />
+                            <Image src="/icon-192.png" alt="Senflix icon" width={40} height={40} className="size-10 object-cover" />
                         </div>
                         <p className="font-display text-sm uppercase tracking-[0.3em] text-primary">
-                            Iziplay
+                            Senflix
                         </p>
                     </div>
                     <p className="max-w-2xl text-sm leading-7 text-muted-foreground">
@@ -32,7 +32,7 @@ export function SiteFooter() {
                     </div>
                 </div>
                 <div className="text-sm text-muted-foreground lg:text-right">
-                    <p>© 2026 Iziplay.</p>
+                    <p>© 2026 Senflix.</p>
                     <p>{content.footer.rights}</p>
                 </div>
             </div>

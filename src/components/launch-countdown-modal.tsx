@@ -4,58 +4,56 @@ import { useEffect, useMemo, useState } from "react";
 import { Clock3, X } from "lucide-react";
 import { useLanguage } from "@/hooks/language-context";
 import { Button } from "@/components/ui/button";
-
-const LAUNCH_TARGET = new Date("2026-05-01T08:00:00Z");
+import {
+    getTimeRemaining,
+    LAUNCH_TARGET,
+    type TimeRemaining,
+} from "@/lib/launch-countdown";
 
 type CountdownUnit = {
     label: string;
     value: string;
 };
 
-function getTimeRemaining(target: Date) {
-    const difference = target.getTime() - Date.now();
+type LaunchCountdownModalProps = {
+    initialTimeRemaining: TimeRemaining;
+};
 
-    if (difference <= 0) {
-        return {
-            complete: true,
-            days: "00",
-            hours: "00",
-            minutes: "00",
-            seconds: "00",
-        };
-    }
-
-    const totalSeconds = Math.floor(difference / 1000);
-    const days = Math.floor(totalSeconds / 86400);
-    const hours = Math.floor((totalSeconds % 86400) / 3600);
-    const minutes = Math.floor((totalSeconds % 3600) / 60);
-    const seconds = totalSeconds % 60;
-
-    return {
-        complete: false,
-        days: String(days).padStart(2, "0"),
-        hours: String(hours).padStart(2, "0"),
-        minutes: String(minutes).padStart(2, "0"),
-        seconds: String(seconds).padStart(2, "0"),
-    };
-}
-
-export function LaunchCountdownModal() {
+export function LaunchCountdownModal({
+    initialTimeRemaining,
+}: LaunchCountdownModalProps) {
     const { content, language } = useLanguage();
     const [isOpen, setIsOpen] = useState(true);
-    const [timeRemaining, setTimeRemaining] = useState(() => getTimeRemaining(LAUNCH_TARGET));
+    const [timeRemaining, setTimeRemaining] = useState(initialTimeRemaining);
 
     useEffect(() => {
-        if (!isOpen || timeRemaining.complete) {
+        if (!isOpen) {
+            return;
+        }
+
+        const syncTimeRemaining = () => {
+            const nextTimeRemaining = getTimeRemaining(LAUNCH_TARGET);
+            setTimeRemaining(nextTimeRemaining);
+
+            return nextTimeRemaining;
+        };
+
+        const initialTime = syncTimeRemaining();
+
+        if (initialTime.complete) {
             return;
         }
 
         const timer = window.setInterval(() => {
-            setTimeRemaining(getTimeRemaining(LAUNCH_TARGET));
+            const nextTimeRemaining = syncTimeRemaining();
+
+            if (nextTimeRemaining.complete) {
+                window.clearInterval(timer);
+            }
         }, 1000);
 
         return () => window.clearInterval(timer);
-    }, [isOpen, timeRemaining.complete]);
+    }, [isOpen]);
 
     useEffect(() => {
         if (!isOpen) {
@@ -72,8 +70,14 @@ export function LaunchCountdownModal() {
 
     const launchDateLabel = useMemo(() => {
         return new Intl.DateTimeFormat(language === "fr" ? "fr-FR" : "en-US", {
-            dateStyle: "full",
-            timeStyle: "short",
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+            timeZone: "UTC",
+            timeZoneName: "short",
         }).format(LAUNCH_TARGET);
     }, [language]);
 

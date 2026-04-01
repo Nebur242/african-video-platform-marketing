@@ -97,13 +97,13 @@ export type SiteContent = {
 export const siteCopy: Record<Language, SiteContent> = {
   en: {
     meta: {
-      title: "Iziplay | Stories That Move",
+      title: "Senflix | Stories That Move",
       description:
         "A video platform built for African creators, communities, and cultural momentum. Publish, grow, monetize, and build direct audience relationships.",
     },
     launchModal: {
       badge: "Coming soon",
-      title: "Iziplay launches soon.",
+      title: "Senflix launches soon.",
       description:
         "We are counting down to the public launch. Stay close while we finish the last mile for creators, viewers, and communities.",
       targetLabel: "Launch target",
@@ -142,7 +142,7 @@ export const siteCopy: Record<Language, SiteContent> = {
       eyebrow: "Built for African stories, creators, and communities",
       title: "Your stories deserve scale, not compromise.",
       description:
-        "Iziplay gives creators a sharper path to publish, grow an audience, and earn from content while viewers discover voices, playlists, and short-form culture in one place.",
+        "Senflix gives creators a sharper path to publish, grow an audience, and earn from content while viewers discover voices, playlists, and short-form culture in one place.",
       primaryCta: "Explore the platform",
       secondaryCta: "See creator value",
       audienceLabel: "Momentum across mobile-first audiences",
@@ -324,19 +324,19 @@ export const siteCopy: Record<Language, SiteContent> = {
     },
     footer: {
       tagline:
-        "Iziplay aligns creator ambition, viewer energy, and operational control in one mobile-first product.",
+        "Senflix aligns creator ambition, viewer energy, and operational control in one mobile-first product.",
       rights: "All rights reserved.",
     },
   },
   fr: {
     meta: {
-      title: "Iziplay | Des histoires qui avancent",
+      title: "Senflix | Des histoires qui avancent",
       description:
         "Une plateforme video pensee pour les createurs africains, les communautes et la croissance culturelle. Publier, developper son audience, monetiser et construire une relation directe avec son public.",
     },
     launchModal: {
       badge: "Bientot disponible",
-      title: "Iziplay arrive bientot.",
+      title: "Senflix arrive bientot.",
       description:
         "Le lancement public approche. Restez proches pendant que nous finalisons la derniere ligne droite pour les createurs, les spectateurs et les communautes.",
       targetLabel: "Date cible",
@@ -375,7 +375,7 @@ export const siteCopy: Record<Language, SiteContent> = {
       eyebrow: "Concue pour les histoires, createurs et communautes africains",
       title: "Vos histoires meritent de la portee, pas des compromis.",
       description:
-        "Iziplay offre aux createurs un chemin plus net pour publier, developper leur audience et monetiser leurs contenus pendant que les spectateurs decouvrent videos, playlists et formats courts au meme endroit.",
+        "Senflix offre aux createurs un chemin plus net pour publier, developper leur audience et monetiser leurs contenus pendant que les spectateurs decouvrent videos, playlists et formats courts au meme endroit.",
       primaryCta: "Explorer la plateforme",
       secondaryCta: "Voir la valeur createur",
       audienceLabel: "Une dynamique pensee pour des audiences d'abord mobiles",
@@ -561,7 +561,7 @@ export const siteCopy: Record<Language, SiteContent> = {
     },
     footer: {
       tagline:
-        "Iziplay relie l'ambition createur, l'energie des audiences et le controle operationnel dans un produit mobile-first.",
+        "Senflix relie l'ambition createur, l'energie des audiences et le controle operationnel dans un produit mobile-first.",
       rights: "Tous droits reserves.",
     },
   },

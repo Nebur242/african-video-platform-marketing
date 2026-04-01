@@ -14,9 +14,9 @@ const displayFont = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Iziplay | Stories That Move | Des histoires qui avancent",
+  title: "Senflix | Stories That Move | Des histoires qui avancent",
   description:
-    "A bilingual marketing site for Iziplay / Une landing page bilingue pour Iziplay, concue pour presenter la croissance createur, la decouverte, la moderation et la distribution mobile-first.",
+    "A bilingual marketing site for Senflix / Une landing page bilingue pour Senflix, concue pour presenter la croissance createur, la decouverte, la moderation et la distribution mobile-first.",
   manifest: "/manifest.webmanifest",
   icons: {
     icon: [
