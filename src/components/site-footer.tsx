@@ -23,6 +23,12 @@ export function SiteFooter() {
                         {content.footer.tagline}
                     </p>
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
+                        <Link href="/terms" className="transition-colors hover:text-foreground">
+                            Terms / Conditions
+                        </Link>
+                        <Link href="/support" className="transition-colors hover:text-foreground">
+                            Support / Contact
+                        </Link>
                         <Link href="/privacy-policy" className="transition-colors hover:text-foreground">
                             Privacy Policy / Politique de confidentialite
                         </Link>
