@@ -99,17 +99,17 @@ export const siteCopy: Record<Language, SiteContent> = {
     meta: {
       title: "Senflix | Stories That Move",
       description:
-        "A video platform built for African creators, communities, and cultural momentum. Publish, grow, monetize, and build direct audience relationships.",
+        "A video platform made for African creators and their communities. Publish your work, grow your audience, earn from your content, and connect directly with the people who watch.",
     },
     launchModal: {
       badge: "Coming soon",
       title: "Senflix launches soon.",
       description:
-        "We are counting down to the public launch. Stay close while we finish the last mile for creators, viewers, and communities.",
+        "We're counting down to the public launch. Stick around — we're putting the finishing touches on everything for creators, viewers, and communities.",
       targetLabel: "Launch target",
       closeLabel: "Close launch countdown modal",
       closedCta: "Close",
-      completeLabel: "We are live.",
+      completeLabel: "We're live.",
       units: {
         days: "Days",
         hours: "Hours",
@@ -139,30 +139,30 @@ export const siteCopy: Record<Language, SiteContent> = {
       },
     },
     hero: {
-      eyebrow: "Built for African stories, creators, and communities",
-      title: "Your stories deserve scale, not compromise.",
+      eyebrow: "Made for African stories, creators, and communities",
+      title: "Your stories deserve reach, not compromise.",
       description:
-        "Senflix gives creators a sharper path to publish, grow an audience, and earn from content while viewers discover voices, playlists, and short-form culture in one place.",
+        "Senflix helps creators publish, grow their audience, and earn from their work — while viewers discover fresh voices, playlists, and short-form content all in one place.",
       primaryCta: "Explore the platform",
-      secondaryCta: "See creator value",
-      audienceLabel: "Momentum across mobile-first audiences",
+      secondaryCta: "See what creators get",
+      audienceLabel: "Built for mobile-first audiences",
       stats: [
-        { value: "EN / FR", label: "Landing experience" },
-        { value: "Shorts + Playlists", label: "Discovery formats" },
-        { value: "Monetization-ready", label: "Creator system" },
+        { value: "EN / FR", label: "Bilingual experience" },
+        { value: "Shorts + Playlists", label: "Content formats" },
+        { value: "Monetization-ready", label: "Creator tools" },
       ],
       liveCards: [
         {
           title: "Creator earnings",
-          detail: "Revenue pathways designed for growth",
+          detail: "Real ways to earn and grow",
         },
         {
           title: "Curated discovery",
           detail: "Trending videos, playlists, and categories",
         },
         {
-          title: "Trust layer",
-          detail: "Moderation tools that protect the experience",
+          title: "Trust & safety",
+          detail: "Moderation tools that keep things safe",
         },
       ],
       creatorLoopLabel: "Creator loop",
@@ -171,60 +171,60 @@ export const siteCopy: Record<Language, SiteContent> = {
       shortsValue: "Always-on discovery",
     },
     value: {
-      title: "One platform, multiple growth loops.",
+      title: "One platform, many ways to grow.",
       description:
-        "The product connects publishing, discovery, community retention, and operational control so the experience works for viewers, creators, and the teams running the ecosystem.",
+        "Publishing, discovery, community, and operations all work together — so the experience is great for viewers, creators, and the teams behind the scenes.",
       cards: [
         {
           title: "Mobile-first publishing",
           description:
-            "Upload and distribute content in formats that match how audiences already consume and share video.",
+            "Upload and share content in the formats your audience already watches and shares.",
         },
         {
           title: "Audience growth built in",
           description:
-            "Categories, playlists, trending rails, and short video surfaces help strong content travel farther.",
+            "Categories, playlists, trending feeds, and short videos help great content reach more people.",
         },
         {
-          title: "Operations with visibility",
+          title: "Clear operational control",
           description:
-            "Moderation, support, and platform controls help the product stay reliable as the catalog and user base grow.",
+            "Moderation, support, and platform settings keep things running smoothly as your catalog and audience grow.",
         },
       ],
     },
     creator: {
       title: "A creator engine, not just a feed.",
       description:
-        "Creators need more than uploads. They need repeat discovery, community feedback loops, and a clear path to monetize attention.",
+        "Creators need more than a place to upload. They need to be discovered again and again, build a community around their work, and have a clear path to earning money.",
       pillars: [
         {
           title: "Publish with intention",
           description:
-            "Long-form video, playlists, and short-form clips create multiple entry points into the same catalog.",
+            "Long-form videos, playlists, and short clips give your audience multiple ways to find and enjoy your work.",
         },
         {
           title: "Build repeat audiences",
           description:
-            "Followers, saved content, playlists, and recommendations turn single views into recurring engagement.",
+            "Followers, saved content, playlists, and recommendations turn one-time viewers into regulars.",
         },
         {
           title: "Turn reach into revenue",
           description:
-            "The platform supports creator revenue features and payout-oriented workflows that can scale with usage.",
+            "Creator earnings, payouts, and monetization features that grow with you.",
         },
       ],
-      revenueTitle: "Monetization signals the platform is designed to support",
+      revenueTitle: "Built-in monetization features",
       revenueItems: [
         "Creator revenue tracking",
-        "Gift and payout workflows",
-        "Premium and curated playlist surfaces",
-        "Operational support for order and payment experiences",
+        "Gifts and payout management",
+        "Premium and curated playlists",
+        "Order and payment handling",
       ],
     },
     discovery: {
       title: "Discovery that feels alive.",
       description:
-        "The viewing experience blends trending content, short-form energy, categories, and editorial playlist moments so the platform feels active every time someone opens it.",
+        "Trending content, short-form energy, categories, and hand-picked playlists make the platform feel fresh every time you open it.",
       columns: [
         {
           title: "Viewers discover",
@@ -256,75 +256,75 @@ export const siteCopy: Record<Language, SiteContent> = {
       ],
     },
     trust: {
-      title: "Trust, safety, and operational clarity are part of the product.",
+      title: "Trust and safety are part of the product.",
       description:
-        "Audience growth only compounds when people trust the surface. The platform is built with moderation, support handling, and internal visibility in mind.",
+        "Growth only lasts when people trust the platform. That's why moderation, support, and transparency are built in from day one.",
       points: [
         {
-          title: "Moderation-aware foundation",
+          title: "Moderation from the ground up",
           description:
-            "Review flows and admin controls help teams respond quickly when content or behavior needs attention.",
+            "Review tools and admin controls help teams act fast when content or behavior needs attention.",
         },
         {
-          title: "Support that closes the loop",
+          title: "Support that actually resolves things",
           description:
-            "Integrated support and operational tools reduce friction for users and internal staff.",
+            "Built-in support tools cut down on back-and-forth for users and staff alike.",
         },
         {
-          title: "Stable media delivery",
+          title: "Reliable media delivery",
           description:
-            "Production media infrastructure is designed for fast playback and consistent distribution.",
+            "The infrastructure behind the scenes is designed for fast playback and smooth streaming.",
         },
       ],
     },
     download: {
-      title: "Download links can go live when the stores are ready.",
+      title: "Download links go live when the stores are ready.",
       description:
-        "The landing page is ready for production now. Store buttons are intentionally labeled as placeholders so they can be replaced with final App Store and Google Play URLs later.",
+        "Everything on this page is ready to go. The store buttons below are placeholders — they'll be swapped for real App Store and Google Play links as soon as they're available.",
       stores: [
         {
-          name: "App Store placeholder",
-          note: "Replace with the final iOS listing URL when available.",
+          name: "App Store (coming soon)",
+          note: "The iOS link will appear here once the app is listed.",
           href: "https://example.com/app-store-placeholder",
         },
         {
-          name: "Google Play placeholder",
-          note: "Replace with the final Android listing URL when available.",
+          name: "Google Play (coming soon)",
+          note: "The Android link will appear here once the app is listed.",
           href: "https://example.com/google-play-placeholder",
         },
       ],
       footnote:
-        "Production deploy requested. Public download links can be swapped in without redesigning the page.",
-      readyCta: "Placeholder links are live and ready to swap",
+        "Real download links will be added here as soon as the app is live on both stores.",
+      readyCta: "Download links coming soon",
     },
     faq: {
-      title: "Questions teams usually ask before launch.",
+      title: "Common questions before launch.",
       items: [
         {
-          question: "Who is this platform designed for?",
+          question: "Who is this for?",
           answer:
-            "It is built for African creators, viewers, and operators who need a mobile-first video ecosystem with publishing, discovery, and operational control in one product.",
+            "African creators, viewers, and the teams behind the scenes who want a mobile-first video platform with publishing, discovery, and real control over operations.",
         },
         {
-          question: "Does the platform support creator monetization?",
+          question: "Can creators earn money on Senflix?",
           answer:
-            "Yes. The product direction clearly supports creator revenue workflows, payout systems, and monetization-oriented experiences that can expand over time.",
+            "Yes. The platform is built around creator revenue — including earnings tracking, payouts, and monetization tools that will keep expanding.",
         },
         {
-          question: "Why highlight moderation on a marketing page?",
+          question: "Why talk about moderation on a marketing page?",
           answer:
-            "Because growth without trust does not compound. Moderation and support readiness are part of the platform's credibility story.",
+            "Because growth without trust doesn't last. Showing that moderation and support are part of the product is just being honest about how we build.",
         },
         {
           question: "Can the download buttons be updated later?",
           answer:
-            "Yes. The current links are explicit placeholders so the final store URLs can be swapped in without changing the structure or copy.",
+            "Yes. The current links are placeholders on purpose — the real store URLs can be dropped in without changing anything else on the page.",
         },
       ],
     },
     footer: {
       tagline:
-        "Senflix aligns creator ambition, viewer energy, and operational control in one mobile-first product.",
+        "Creator ambition, viewer energy, and operational control — together in one mobile-first product.",
       rights: "All rights reserved.",
     },
   },
@@ -332,17 +332,17 @@ export const siteCopy: Record<Language, SiteContent> = {
     meta: {
       title: "Senflix | Des histoires qui avancent",
       description:
-        "Une plateforme video pensee pour les createurs africains, les communautes et la croissance culturelle. Publier, developper son audience, monetiser et construire une relation directe avec son public.",
+        "Une plateforme vidéo faite pour les créateurs africains et leurs communautés. Publiez, développez votre audience, monétisez votre travail et créez un lien direct avec votre public.",
     },
     launchModal: {
-      badge: "Bientot disponible",
-      title: "Senflix arrive bientot.",
+      badge: "Bientôt disponible",
+      title: "Senflix arrive bientôt.",
       description:
-        "Le lancement public approche. Restez proches pendant que nous finalisons la derniere ligne droite pour les createurs, les spectateurs et les communautes.",
+        "On approche du lancement public. Restez dans le coin — on met les dernières touches pour les créateurs, les spectateurs et les communautés.",
       targetLabel: "Date cible",
-      closeLabel: "Fermer la fenetre du compte a rebours de lancement",
+      closeLabel: "Fermer la fenêtre du compte à rebours",
       closedCta: "Fermer",
-      completeLabel: "Nous sommes en ligne.",
+      completeLabel: "C'est parti !",
       units: {
         days: "Jours",
         hours: "Heures",
@@ -352,15 +352,15 @@ export const siteCopy: Record<Language, SiteContent> = {
     },
     nav: {
       product: "Plateforme",
-      creators: "Createurs",
-      discovery: "Decouverte",
+      creators: "Créateurs",
+      discovery: "Découverte",
       trust: "Confiance",
       faq: "FAQ",
-      download: "Telechargement",
+      download: "Téléchargement",
     },
     header: {
       languageLabel: "Langue",
-      themeLabel: "Theme",
+      themeLabel: "Thème",
       launchCta: "Voir l'aperçu",
       openMenuLabel: "Ouvrir le menu de navigation",
       closeMenuLabel: "Fermer le menu de navigation",
@@ -368,201 +368,200 @@ export const siteCopy: Record<Language, SiteContent> = {
       themeOptions: {
         light: "Clair",
         dark: "Sombre",
-        system: "Systeme",
+        system: "Système",
       },
     },
     hero: {
-      eyebrow: "Concue pour les histoires, createurs et communautes africains",
-      title: "Vos histoires meritent de la portee, pas des compromis.",
+      eyebrow: "Conçue pour les histoires, créateurs et communautés d'Afrique",
+      title: "Vos histoires méritent de la portée, pas des compromis.",
       description:
-        "Senflix offre aux createurs un chemin plus net pour publier, developper leur audience et monetiser leurs contenus pendant que les spectateurs decouvrent videos, playlists et formats courts au meme endroit.",
+        "Senflix aide les créateurs à publier, développer leur audience et gagner de l'argent avec leur contenu — pendant que les spectateurs découvrent de nouvelles voix, des playlists et des formats courts, le tout au même endroit.",
       primaryCta: "Explorer la plateforme",
-      secondaryCta: "Voir la valeur createur",
-      audienceLabel: "Une dynamique pensee pour des audiences d'abord mobiles",
+      secondaryCta: "Voir ce que les créateurs y gagnent",
+      audienceLabel: "Pensée pour des audiences mobiles avant tout",
       stats: [
-        { value: "EN / FR", label: "Experience bilingue" },
-        { value: "Formats courts + playlists", label: "Moteurs de decouverte" },
-        { value: "Pret pour la monetisation", label: "Systeme createur" },
+        { value: "EN / FR", label: "Expérience bilingue" },
+        { value: "Formats courts + playlists", label: "Formats de contenu" },
+        { value: "Prêt pour la monétisation", label: "Outils créateur" },
       ],
       liveCards: [
         {
-          title: "Revenus createurs",
-          detail: "Des parcours de revenus concus pour la croissance",
+          title: "Revenus créateurs",
+          detail: "De vraies façons de gagner et de grandir",
         },
         {
-          title: "Decouverte editee",
-          detail: "Tendances, playlists et categories",
+          title: "Découverte éditorialisée",
+          detail: "Tendances, playlists et catégories",
         },
         {
-          title: "Couche de confiance",
-          detail: "Des outils de moderation pour proteger l'experience",
+          title: "Confiance & sécurité",
+          detail: "Des outils de modération pour que tout reste sûr",
         },
       ],
-      creatorLoopLabel: "Boucle createur",
-      creatorLoopValue: "Publier. Toucher. Monetiser.",
+      creatorLoopLabel: "Boucle créateur",
+      creatorLoopValue: "Publier. Toucher. Monétiser.",
       shortsLabel: "Formats courts",
-      shortsValue: "Une decouverte toujours active",
+      shortsValue: "Une découverte toujours active",
     },
     value: {
-      title: "Une plateforme, plusieurs boucles de croissance.",
+      title: "Une plateforme, plein de façons de grandir.",
       description:
-        "Le produit relie publication, decouverte, retention communautaire et pilotage operationnel afin que l'experience fonctionne pour les spectateurs, les createurs et les equipes internes.",
+        "Publication, découverte, communauté et pilotage — tout fonctionne ensemble pour que l'expérience soit au top pour les spectateurs, les créateurs et les équipes en coulisses.",
       cards: [
         {
           title: "Publication mobile-first",
           description:
-            "Telecharger et distribuer les contenus dans des formats qui correspondent aux usages reels des audiences.",
+            "Téléversez et partagez vos contenus dans les formats que votre audience regarde et partage déjà.",
         },
         {
-          title: "Croissance d'audience integree",
+          title: "Croissance d'audience intégrée",
           description:
-            "Categories, playlists, contenus tendance et formats courts aident les meilleurs contenus a circuler davantage.",
+            "Catégories, playlists, tendances et vidéos courtes aident les bons contenus à toucher plus de monde.",
         },
         {
-          title: "Pilotage avec visibilite",
+          title: "Un pilotage clair",
           description:
-            "Moderation, support et parametres plateforme gardent l'experience fiable quand le catalogue et la base utilisateur grandissent.",
+            "Modération, support et paramètres plateforme gardent les choses fluides à mesure que le catalogue et l'audience grandissent.",
         },
       ],
     },
     creator: {
-      title: "Un moteur createur, pas seulement un flux.",
+      title: "Un moteur créateur, pas juste un fil d'actu.",
       description:
-        "Les createurs ont besoin de plus que d'un simple upload. Ils ont besoin de decouverte recurrente, de boucles communautaires et d'un chemin clair vers la monetisation.",
+        "Les créateurs ont besoin de plus qu'un espace pour publier. Ils veulent être découverts encore et encore, fédérer une communauté et avoir un vrai chemin vers la monétisation.",
       pillars: [
         {
           title: "Publier avec intention",
           description:
-            "Video longue, playlists et clips courts creent plusieurs points d'entree dans un meme catalogue.",
+            "Vidéos longues, playlists et clips courts offrent à votre audience plusieurs portes d'entrée dans votre catalogue.",
         },
         {
-          title: "Construire une audience recurrente",
+          title: "Construire une audience fidèle",
           description:
-            "Followers, contenus sauvegardes, playlists et recommandations transforment une vue isolee en engagement regulier.",
+            "Abonnés, contenus sauvegardés, playlists et recommandations transforment un spectateur de passage en habitué.",
         },
         {
-          title: "Transformer la portee en revenus",
+          title: "Transformer la portée en revenus",
           description:
-            "La plateforme supporte des fonctionnalites de revenus createurs et des workflows de paiement capables d'evoluer avec l'usage.",
+            "Revenus créateurs, versements et outils de monétisation qui grandissent avec vous.",
         },
       ],
-      revenueTitle: "Signaux de monetisation que la plateforme sait soutenir",
+      revenueTitle: "Fonctionnalités de monétisation intégrées",
       revenueItems: [
-        "Suivi des revenus createurs",
-        "Workflows de cadeaux et de paiements",
-        "Playlists premium et surfaces editees",
-        "Support operationnel pour commandes et paiements",
+        "Suivi des revenus créateurs",
+        "Gestion des cadeaux et des versements",
+        "Playlists premium et sélections éditoriales",
+        "Gestion des commandes et des paiements",
       ],
     },
     discovery: {
-      title: "Une decouverte qui semble vivante.",
+      title: "Une découverte qui vit.",
       description:
-        "L'experience melange contenus tendance, energie des formats courts, categories et moments editoriaux pour que la plateforme paraisse active a chaque ouverture.",
+        "Contenus tendance, énergie des formats courts, catégories et playlists choisies — la plateforme a toujours quelque chose de frais à proposer.",
       columns: [
         {
-          title: "Les spectateurs decouvrent",
+          title: "Les spectateurs découvrent",
           items: [
-            "Videos tendance",
-            "Highlights formats courts",
-            "Top createurs",
-            "Navigation par categories",
+            "Vidéos tendance",
+            "Moments forts en format court",
+            "Top créateurs",
+            "Navigation par catégories",
           ],
         },
         {
-          title: "Les communautes reviennent",
+          title: "Les communautés reviennent",
           items: [
-            "Contenus sauvegardes",
-            "Bookmarks",
-            "Boucles followers",
-            "Recommandations personnalisees",
+            "Contenus sauvegardés",
+            "Favoris",
+            "Fil d'abonnés",
+            "Recommandations personnalisées",
           ],
         },
         {
-          title: "Les equipes gardent le controle",
+          title: "Les équipes gardent le contrôle",
           items: [
-            "Outils de moderation",
+            "Outils de modération",
             "Flux support",
-            "Gestion media",
+            "Gestion média",
             "Configuration plateforme",
           ],
         },
       ],
     },
     trust: {
-      title:
-        "La confiance, la securite et la clarte operationnelle font partie du produit.",
+      title: "La confiance et la sécurité font partie du produit.",
       description:
-        "La croissance ne dure que si la surface inspire confiance. La plateforme est pensee avec moderation, support et visibilite interne des le depart.",
+        "La croissance ne tient que si les gens font confiance à la plateforme. C'est pour ça que la modération, le support et la transparence sont intégrés dès le départ.",
       points: [
         {
-          title: "Fondation sensible a la moderation",
+          title: "Modération intégrée dès le départ",
           description:
-            "Les flux de revue et les controles admin aident les equipes a reagir rapidement quand un contenu ou un comportement demande une action.",
+            "Outils de revue et contrôles admin pour que les équipes puissent agir vite quand un contenu ou un comportement pose problème.",
         },
         {
-          title: "Un support qui ferme la boucle",
+          title: "Un support qui résout vraiment les choses",
           description:
-            "Les outils integres de support et d'exploitation reduisent les frictions pour les utilisateurs comme pour les equipes internes.",
+            "Des outils de support intégrés qui évitent les allers-retours, autant pour les utilisateurs que pour les équipes.",
         },
         {
-          title: "Une diffusion media stable",
+          title: "Une diffusion média fiable",
           description:
-            "L'infrastructure media de production vise une lecture rapide et une distribution coherente.",
+            "L'infrastructure derrière la plateforme est conçue pour une lecture rapide et un streaming fluide.",
         },
       ],
     },
     download: {
       title:
-        "Les liens de telechargement pourront etre publies des que les stores seront prets.",
+        "Les liens de téléchargement arrivent dès que les stores sont prêts.",
       description:
-        "La landing page est prete pour la production. Les boutons de store sont volontairement identifies comme placeholders afin d'etre remplaces plus tard par les liens finaux App Store et Google Play.",
+        "Tout est prêt sur cette page. Les boutons ci-dessous sont des liens temporaires — ils seront remplacés par les vrais liens App Store et Google Play dès qu'ils seront disponibles.",
       stores: [
         {
-          name: "Placeholder App Store",
-          note: "A remplacer par l'URL iOS finale quand elle sera disponible.",
+          name: "App Store (bientôt)",
+          note: "Le lien iOS apparaîtra ici quand l'app sera publiée.",
           href: "https://example.com/app-store-placeholder",
         },
         {
-          name: "Placeholder Google Play",
-          note: "A remplacer par l'URL Android finale quand elle sera disponible.",
+          name: "Google Play (bientôt)",
+          note: "Le lien Android apparaîtra ici quand l'app sera publiée.",
           href: "https://example.com/google-play-placeholder",
         },
       ],
       footnote:
-        "Deploiement production demande. Les vrais liens de telechargement pourront etre injectes sans refaire le design.",
-      readyCta: "Les liens placeholders sont prets a etre remplaces",
+        "Les vrais liens de téléchargement seront ajoutés ici dès que l'app sera en ligne sur les deux stores.",
+      readyCta: "Liens de téléchargement à venir",
     },
     faq: {
-      title: "Les questions posees avant un lancement.",
+      title: "Questions fréquentes avant le lancement.",
       items: [
         {
-          question: "A qui s'adresse la plateforme ?",
+          question: "À qui s'adresse la plateforme ?",
           answer:
-            "Elle est concue pour les createurs africains, les spectateurs et les equipes qui ont besoin d'un ecosysteme video mobile-first combinant publication, decouverte et controle operationnel.",
-        },
-        {
-          question: "La plateforme supporte-t-elle la monetisation createur ?",
-          answer:
-            "Oui. La direction produit supporte clairement les workflows de revenus createurs, les paiements et des experiences orientees monetisation qui peuvent evoluer dans le temps.",
+            "Aux créateurs africains, aux spectateurs et aux équipes qui cherchent un écosystème vidéo mobile-first avec publication, découverte et un vrai contrôle sur les opérations.",
         },
         {
           question:
-            "Pourquoi mettre la moderation en avant sur une page marketing ?",
+            "Les créateurs peuvent-ils gagner de l'argent sur Senflix ?",
           answer:
-            "Parce que la croissance sans confiance ne dure pas. La moderation et la preparation du support font partie de la credibilite du produit.",
+            "Oui. La plateforme est construite autour des revenus créateurs — avec suivi des gains, versements et outils de monétisation qui continueront d'évoluer.",
+        },
+        {
+          question: "Pourquoi parler de modération sur une page marketing ?",
+          answer:
+            "Parce que la croissance sans confiance ne dure pas. Montrer que la modération et le support font partie du produit, c'est simplement être honnête sur notre façon de construire.",
         },
         {
           question:
-            "Les boutons de telechargement pourront-ils etre mis a jour plus tard ?",
+            "Les boutons de téléchargement pourront-ils être mis à jour plus tard ?",
           answer:
-            "Oui. Les liens actuels sont des placeholders explicites afin de pouvoir remplacer les URLs finales sans changer la structure ni le contenu.",
+            "Oui. Les liens actuels sont des emplacements réservés — les vraies URLs des stores pourront être ajoutées sans rien changer d'autre sur la page.",
         },
       ],
     },
     footer: {
       tagline:
-        "Senflix relie l'ambition createur, l'energie des audiences et le controle operationnel dans un produit mobile-first.",
-      rights: "Tous droits reserves.",
+        "Ambition créateur, énergie du public et contrôle opérationnel — réunis dans un produit mobile-first.",
+      rights: "Tous droits réservés.",
     },
   },
 };

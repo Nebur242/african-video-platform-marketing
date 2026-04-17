@@ -5,7 +5,8 @@ import Link from "next/link";
 import { useLanguage } from "@/hooks/language-context";
 
 export function SiteFooter() {
-    const { content } = useLanguage();
+    const { content, language } = useLanguage();
+    const legalBasePath = `/${language}`;
 
     return (
         <footer className="border-t border-border/70 bg-card/40">
@@ -13,7 +14,7 @@ export function SiteFooter() {
                 <div className="space-y-3">
                     <div className="flex items-center gap-3">
                         <div className="flex size-10 items-center justify-center overflow-hidden rounded-2xl bg-primary/10 ring-1 ring-primary/20">
-                            <Image src="/icon-192.png" alt="Senflix icon" width={40} height={40} className="size-10 object-cover" />
+                            <Image src="/senflix-icon.png" alt="Senflix icon" width={40} height={40} className="size-10 object-cover" />
                         </div>
                         <p className="font-display text-sm uppercase tracking-[0.3em] text-primary">
                             Senflix
@@ -23,14 +24,20 @@ export function SiteFooter() {
                         {content.footer.tagline}
                     </p>
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
-                        <Link href="/terms" className="transition-colors hover:text-foreground">
+                        <Link href={`${legalBasePath}/terms`} className="transition-colors hover:text-foreground">
                             Terms / Conditions
                         </Link>
-                        <Link href="/support" className="transition-colors hover:text-foreground">
+                        <Link href={`${legalBasePath}/support`} className="transition-colors hover:text-foreground">
                             Support / Contact
                         </Link>
-                        <Link href="/privacy-policy" className="transition-colors hover:text-foreground">
+                        <Link href={`${legalBasePath}/contact`} className="transition-colors hover:text-foreground">
+                            Contact Form
+                        </Link>
+                        <Link href={`${legalBasePath}/privacy-policy`} className="transition-colors hover:text-foreground">
                             Privacy Policy / Politique de confidentialite
+                        </Link>
+                        <Link href={`${legalBasePath}/copyright`} className="transition-colors hover:text-foreground">
+                            Copyright
                         </Link>
                         <a href="mailto:hello@nebur242.com" className="transition-colors hover:text-foreground">
                             hello@nebur242.com

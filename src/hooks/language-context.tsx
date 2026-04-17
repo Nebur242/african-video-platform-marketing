@@ -18,8 +18,14 @@ type LanguageContextValue = {
 
 const LanguageContext = createContext<LanguageContextValue | undefined>(undefined);
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-    const [language, setLanguage] = useState<Language>("fr");
+export function LanguageProvider({
+    children,
+    initialLanguage = "fr",
+}: Readonly<{
+    children: ReactNode;
+    initialLanguage?: Language;
+}>) {
+    const [language, setLanguage] = useState<Language>(initialLanguage);
 
     const value = useMemo<LanguageContextValue>(
         () => ({
