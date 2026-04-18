@@ -14,7 +14,7 @@ export const legalCopy = {
     common: {
       brand: "Senflix",
       backHome: "Back to home",
-      contactEmail: "hello@nebur242.com",
+      contactEmail: "nebur.nztech@gmail.com",
     },
     terms: {
       metadata: {
@@ -81,7 +81,7 @@ export const legalCopy = {
         "Need help with your account, creator workflow, billing, or a moderation concern? Use the contact address below and include the details that let our team identify the right user, content, or transaction quickly.",
       primaryContactLabel: "Primary contact",
       primaryContactSummary:
-        "Résumé : pour toute aide avec votre compte, vos achats, vos contenus ou la modération, contactez hello@nebur242.com.",
+        "Résumé : pour toute aide avec votre compte, vos achats, vos contenus ou la modération, contactez nebur.nztech@gmail.com.",
       includeTitle: "What to include",
       channels: [
         {
@@ -224,7 +224,7 @@ export const legalCopy = {
         "For support, privacy requests, or data rights questions, contact ",
       contactSuffix: ".",
       contactSummary:
-        "Résumé : pour les questions de confidentialité, de support ou de droits sur vos données, contactez hello@nebur242.com.",
+        "Résumé : pour les questions de confidentialité, de support ou de droits sur vos données, contactez nebur.nztech@gmail.com.",
       securityTitle: "Security and updates",
       securityBody:
         "We use reasonable technical and organizational safeguards to protect personal information, but no system is perfectly secure. We may update this policy from time to time, and material changes will be reflected by updating the effective date on this page.",
@@ -282,7 +282,7 @@ export const legalCopy = {
     common: {
       brand: "Senflix",
       backHome: "Retour à l'accueil",
-      contactEmail: "hello@nebur242.com",
+      contactEmail: "nebur.nztech@gmail.com",
     },
     terms: {
       metadata: {
@@ -349,7 +349,7 @@ export const legalCopy = {
         "Besoin d'aide pour votre compte, votre parcours créateur, la facturation ou une question de modération ? Utilisez l'adresse ci-dessous et ajoutez les détails qui permettent à notre équipe d'identifier rapidement le bon utilisateur, contenu ou paiement.",
       primaryContactLabel: "Contact principal",
       primaryContactSummary:
-        "English summary: for any help with account, purchases, content, or moderation, contact hello@nebur242.com.",
+        "English summary: for any help with account, purchases, content, or moderation, contact nebur.nztech@gmail.com.",
       includeTitle: "Que faut-il inclure ?",
       channels: [
         {
@@ -492,7 +492,7 @@ export const legalCopy = {
         "Pour le support, les demandes de confidentialité ou les questions sur vos droits, contactez ",
       contactSuffix: ".",
       contactSummary:
-        "English summary: for privacy, support, or data-rights questions, contact hello@nebur242.com.",
+        "English summary: for privacy, support, or data-rights questions, contact nebur.nztech@gmail.com.",
       securityTitle: "Sécurité et mises à jour",
       securityBody:
         "Nous utilisons des mesures techniques et organisationnelles raisonnables pour protéger les informations personnelles, mais aucun système n'est parfait. Cette politique peut être mise à jour, et tout changement important sera reflété par une nouvelle date d'effet sur cette page.",

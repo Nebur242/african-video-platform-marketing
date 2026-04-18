@@ -91,6 +91,10 @@ export type SiteContent = {
   footer: {
     tagline: string;
     rights: string;
+    termsLink: string;
+    supportLink: string;
+    contactFormLink: string;
+    privacyLink: string;
   };
 };
 
@@ -326,6 +330,10 @@ export const siteCopy: Record<Language, SiteContent> = {
       tagline:
         "Creator ambition, viewer energy, and operational control — together in one mobile-first product.",
       rights: "All rights reserved.",
+      termsLink: "Terms & Conditions",
+      supportLink: "Support",
+      contactFormLink: "Contact Form",
+      privacyLink: "Privacy Policy",
     },
   },
   fr: {
@@ -562,6 +570,10 @@ export const siteCopy: Record<Language, SiteContent> = {
       tagline:
         "Ambition créateur, énergie du public et contrôle opérationnel — réunis dans un produit mobile-first.",
       rights: "Tous droits réservés.",
+      termsLink: "Conditions générales",
+      supportLink: "Assistance",
+      contactFormLink: "Formulaire de contact",
+      privacyLink: "Politique de confidentialité",
     },
   },
 };

@@ -25,22 +25,22 @@ export function SiteFooter() {
                     </p>
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
                         <Link href={`${legalBasePath}/terms`} className="transition-colors hover:text-foreground">
-                            Terms / Conditions
+                            {content.footer.termsLink}
                         </Link>
                         <Link href={`${legalBasePath}/support`} className="transition-colors hover:text-foreground">
-                            Support / Contact
+                            {content.footer.supportLink}
                         </Link>
                         <Link href={`${legalBasePath}/contact`} className="transition-colors hover:text-foreground">
-                            Contact Form
+                            {content.footer.contactFormLink}
                         </Link>
                         <Link href={`${legalBasePath}/privacy-policy`} className="transition-colors hover:text-foreground">
-                            Privacy Policy / Politique de confidentialite
+                            {content.footer.privacyLink}
                         </Link>
                         <Link href={`${legalBasePath}/copyright`} className="transition-colors hover:text-foreground">
                             Copyright
                         </Link>
-                        <a href="mailto:hello@nebur242.com" className="transition-colors hover:text-foreground">
-                            hello@nebur242.com
+                        <a href="mailto:nebur.nztech@gmail.com" className="transition-colors hover:text-foreground">
+                            nebur.nztech@gmail.com
                         </a>
                     </div>
                 </div>

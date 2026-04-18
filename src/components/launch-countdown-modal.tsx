@@ -19,12 +19,21 @@ type LaunchCountdownModalProps = {
     initialTimeRemaining: TimeRemaining;
 };
 
+const MODAL_SHOWN_KEY = "senflix_launch_modal_shown";
+
 export function LaunchCountdownModal({
     initialTimeRemaining,
 }: LaunchCountdownModalProps) {
     const { content, language } = useLanguage();
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     const [timeRemaining, setTimeRemaining] = useState(initialTimeRemaining);
+
+    useEffect(() => {
+        if (!sessionStorage.getItem(MODAL_SHOWN_KEY)) {
+            setIsOpen(true);
+            sessionStorage.setItem(MODAL_SHOWN_KEY, "1");
+        }
+    }, []);
 
     useEffect(() => {
         if (!isOpen) {
