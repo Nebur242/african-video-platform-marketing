@@ -59,7 +59,7 @@ export function ContactForm({
         };
 
         try {
-            const res = await fetch(`${API_BASE_URL}/api/v1/support/public`, {
+            const res = await fetch(`${API_BASE_URL}/support/public`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(body),
