@@ -39,8 +39,8 @@ export function SiteFooter() {
                         <Link href={`${legalBasePath}/copyright`} className="transition-colors hover:text-foreground">
                             Copyright
                         </Link>
-                        <a href="mailto:nebur.nztech@gmail.com" className="transition-colors hover:text-foreground">
-                            nebur.nztech@gmail.com
+                        <a href="mailto:dev.support@senflix.app" className="transition-colors hover:text-foreground">
+                            dev.support@senflix.app
                         </a>
                     </div>
                 </div>
