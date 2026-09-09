@@ -327,8 +327,7 @@ export const siteCopy: Record<Language, SiteContent> = {
       ],
     },
     footer: {
-      tagline:
-        "Creator ambition, viewer energy, and operational control — together in one mobile-first product.",
+      tagline: "Le meilleur du contenu africain.",
       rights: "All rights reserved.",
       termsLink: "Terms & Conditions",
       supportLink: "Support",
@@ -338,7 +337,7 @@ export const siteCopy: Record<Language, SiteContent> = {
   },
   fr: {
     meta: {
-      title: "Senflix | Des histoires qui avancent",
+      title: "Senflix | Le meilleur du contenu africain.",
       description:
         "Une plateforme vidéo faite pour les créateurs africains et leurs communautés. Publiez, développez votre audience, monétisez votre travail et créez un lien direct avec votre public.",
     },
@@ -567,8 +566,7 @@ export const siteCopy: Record<Language, SiteContent> = {
       ],
     },
     footer: {
-      tagline:
-        "Ambition créateur, énergie du public et contrôle opérationnel — réunis dans un produit mobile-first.",
+      tagline: "Le meilleur du contenu africain.",
       rights: "Tous droits réservés.",
       termsLink: "Conditions générales",
       supportLink: "Assistance",

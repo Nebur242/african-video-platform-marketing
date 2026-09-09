@@ -14,7 +14,7 @@ const displayFont = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Senflix | Stories That Move | Des histoires qui avancent",
+  title: "Senflix | Le meilleur du contenu africain.",
   description:
     "A bilingual marketing site for Senflix / Une landing page bilingue pour Senflix, concue pour presenter la croissance createur, la decouverte, la moderation et la distribution mobile-first.",
   manifest: "/manifest.webmanifest",
